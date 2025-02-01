@@ -22,7 +22,7 @@
           <span class="inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg shadow-md">
             Email:
             <a href="awyoonisj@gmail.com" class="text-indigo-300 hover:underline">
-              test@gmail.com
+             awyoonisj@gmail.com
             </a>
           </span>
         </p>
