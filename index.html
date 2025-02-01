@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jamal Aw-Yonis | Frontend Developer</title>
+    
+    <!-- Favicon (Consider creating a custom favicon) -->
+    <link rel="icon" type="image/svg+xml" href="/portfolio-app/vite.svg" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Jamal Aw Yonis - Passionate Frontend Developer specializing in Vue.js and modern web technologies. Explore my projects and development expertise." />
+    <meta name="author" content="Jamal Aw Yonis" />
+    <meta name="keywords" content="Web Developer, Vue.js, Portfolio, Frontend Development, JavaScript" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-portfolio.com/" />
+    <meta property="og:title" content="Jamal Aw Yonis| Frontend Developer" />
+    <meta property="og:description" content="Professional portfolio showcasing web development projects and technical expertise" />
+    <meta property="og:image" content="/social-preview.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://your-portfolio.com/" />
+    <meta property="twitter:title" content="Jamal Aw Yonis | Frontend Developer" />
+    <meta property="twitter:description" content="Professional portfolio showcasing web development projects and technical expertise" />
+    <meta property="twitter:image" content="/social-preview.png" />
+
+    <!-- Preload Resources -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Initial Styles -->
+    <style>
+      :root {
+        --primary-color: #3b82f6;
+        --secondary-color: #1e40af;
+      }
+
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        background: linear-gradient(45deg, #f8fafc, #f1f5f9);
+        min-height: 100vh;
+        color: #1e293b;
+      }
+
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid #e2e8f0;
+        border-top-color: var(--primary-color);
+        animation: spin 1s linear infinite;
+        border-radius: 50%;
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+
+      #app-loading {
+        transition: opacity 0.3s ease-out;
+      }
+    </style>
+    <script type="module" crossorigin src="/portfolio-app/assets/index-BWdJxiLu.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio-app/assets/index-ouRdF9Pg.css">
+  </head>
+
+  <body class="antialiased">
+    <!-- App Loading Screen -->
+    <div id="app-loading" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white transition-opacity duration-300">
+      <div class="loading-spinner mb-4"></div>
+      <h1 class="text-2xl font-bold text-slate-800">Jamal Aw Yonis</h1>
+      <p class="mt-2 text-slate-600">Loading Portfolio...</p>
+    </div>
+
+    <!-- Vue App Mount Point -->
+    <div id="app"></div>
+
+    <!-- Main Script -->
+
+    <!-- Loading Transition Script -->
+    <script>
+      window.addEventListener('load', () => {
+        const loadingScreen = document.getElementById('app-loading');
+        if (loadingScreen) {
+          setTimeout(() => {
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => loadingScreen.remove(), 300);
+          }, 1000);
+        }
+      });
+    </script>
+  </body>
+</html>
