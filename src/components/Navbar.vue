@@ -14,7 +14,7 @@
           <span
             class="text-2xl font-bold tracking-tighter bg-gradient-to-r from-cyan-400 to-blue-300 bg-clip-text text-transparent transition-all duration-300 group-hover:scale-105"
           >
-            JD
+            JAW
           </span>
           <span class="h-4 w-[1px] bg-white/40 rotate-12"></span>
           <span class="text-sm font-medium text-blue-100/90">Portfolio</span>
